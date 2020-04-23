@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description"  >
+		<meta name="author" content="Fenimore Love">
+		<link rel="icon" href="img/favicon.ico">
+		<title>Chess</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<style>
+		   body {
+			padding-top:40px;
+			padding-left: 20%;
+			padding-right: 20%;
+		   }
+		   .welcome {
+		   padding: 40px 15px;
+		   text-align: center;
+		   }
+		   .section-examples h4 {font-family:sans-serif;}
+		</style>
+		<!-- Javascript
+		   ================================================== -->
+		<!-- Placed at the start of the document for the chessboard generation -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/chessboard-0.3.0.js"></script>
+		<script src="js/chess.js"></script>
+	 </head>
+			<body>
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+					<div class="container">
+					  <div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img width="30px" height="30px" src="img/logo.png"></a>
+					  </div>
+					  <div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav nav-pills">
+							<li><a href="index.php#recent">Archive</a></li>
+							<li><a href="index.php#about"></i>About</a></li>
+							<li><a href="index.php#new">New</a></li>
+							<li><a href="Instructions.html">Instructions</a></li>
+							<li><a href="chess2.html">Rules</a></li>
+						</ul>
+					  </div>
+					</div>
+				  </nav>
+					<hr>
+						<div class ="center">
+							<h1>Setup of Chessboard</h1>
+						</div>
+				<img src="img/chessboard.jpg" alt="Chessboard"><br />
+				<div class="a">
+					<p>
+						Sizing of the chessboard consists of an 8x8 grid <i>(64 parts or squares)</i>. 
+						Within this board there are eight lines running vertically along the board. These eight lines are assigned 
+						numbers: 1,2,3,4,5,6,7,8. Also, the lines running horizontally are designated with
+						letters: a,b,c,d,e,f,g,h. The letters we have consist of an 'a' line 'b' line and so on. We use these letters such that
+						'a' line is the first column 'b' line is the second column because each square belongs to one line and one row. If
+						we were to call A5 that means we are going to the first column 'A' and up to the 5th row. A quick
+						note that I must add is that the letter always comes before the number. So there cannot be 
+						a move for a piece to 5A <b>ONLY</b> to <i>A5</i>.
+					</p>
+					</div>
+					<div class="a">
+					<p>
+						A student of Chess should know the Chessboard meticulously. When having to
+						call out moves the players have to visualize the position of each individual 
+						square and how it relates to the neighboring squares. At the beginning of the
+						game you should have at least 16 pieces. These pieces should consist of: 8 pawns, 
+						2 knights, 2 bishops, 2 rooks, a King and a Queen piece. Click the following <a href="chess2.html">link</a> 
+						to go to the pieces and movement page. Here we will be explaining what the pieces look like as well as the moves associated
+						with them and when they can be performed. There is a determined position for each piece for the start of the game and players take turns alternatively. 
+						Chess pieces can be any color made out of just about any durable material but, when playing with black and white pieces whoever has the white pieces go first. <b>Remember</b> only one piece can be moved per turn except when
+						castling.
+						This is how your board should look
+						at the beginning of the game:<img src="img/init.jpg" alt="FullChessboard">
+					</p>
+					</div>
+					<p>
+					<div class ="a">
+					A queen piece must be on the square that matches her color. Players will take pieces once an opponent's piece
+					is within their path of movement. The only piece on the board that can take differently outside of their
+					movement path is the pawn. This is because they only move forward and on their first move they can move one
+					or two spaces. Pawns can make moves diagonally to take their opponents. Also, players CANNOT take or move through their own pieces. 
+					The game ends on a either a Checkmate, Stalemate or a Draw. In a checkmate the game is clearly decided, a stalemate is when
+					whoever turn it might be cannot make a legal move and their King is not checked or checkmated the game is essentially over. Whoever is 
+					stalemated does not lose or win the game.
+					</p>
+					<hr>
+							
+					</div>
+</body>
+</html>
