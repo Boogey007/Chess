@@ -1,0 +1,489 @@
+body {
+	width: 790px;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: left;
+
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+	color: black;
+
+	background: #303030;
+}
+
+#clock {
+	font-size: 25px;
+    color: yellowgreen;
+}
+
+div.a {
+	padding: 0% 10%;
+	color: white;
+ 
+ }
+ a:-webkit-any-link {
+	color: yellowgreen;
+}
+ 
+ 
+ div.center{
+	 text-align:center;
+ }
+ div.toplinks{
+	 margin: auto;
+	 width:14%;
+	 border: 6px double brown;
+	 padding:10px;
+ }
+ pre {
+	color: greenyellow;
+	font-size: 40px;
+	text-align: center;
+    font-weight: 700;
+ }
+
+ img{
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	}
+ 
+ .arrow-left {
+   width: 50px; 
+   height: 50px; 
+   border-top: 10px solid transparent;
+   border-bottom: 10px solid transparent; 
+   
+   border-right:10px solid blue; 
+ }
+ 
+ .navindent {
+	 margin-left: 160px;
+ }
+ 
+ 
+ .container .box
+ {
+		 opacity:0.5;
+		 position: relative;
+		 width: 400px;
+		 height: 400px;
+		 background: #ff0;
+		 margin: 10px;
+		 box-sizing: border-box;
+		 display: inline-block;
+		 border: 2px solid red;
+ 
+ }
+ 
+ .container .box
+ {
+	 position: relative;
+	 overflow: hidden;
+ }
+ 
+ .container .box .imgBox img
+ {
+ 
+	 max-width: 100%;
+	 transition: transform 2s;
+ 
+ }
+ .container .box:hover
+ {
+	 opacity: 1;
+ }
+ 
+ .container .box .details
+ {
+	 position: absolute;
+	 top: 10px;
+	 left: 10px;
+	 bottom: 10px;
+	 right: 10px;
+	 transform: scaleY(0);
+	 transition: transform .5s;
+	 color: red;
+	 
+ }
+ .container .box:hover .details
+ {
+	 
+	 transform: scaleY(1);
+ }
+ 
+ .container .box .details .content
+ {
+	 position: absolute;
+	 top: 50%;
+	 transform: translateY(-50%);
+ }
+ 
+ 
+ .container
+ {
+	 width: 1280px;
+	 margin: 70px auto 0;
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+ }
+  
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+  
+  .sidenav a {
+	padding: 15px 8px 15px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFF;
+	margin-top:20px;
+	display: block;
+  }
+  
+  .sidenav a:hover {
+	  background-color: #2ca3f2;
+  }
+  
+  .new  {
+	  background-color: yellowgreen;
+  }
+  .main {
+	margin-left: 160px;  
+	font-size: 28px;  
+	padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+  
+   
+
+h1 {
+	text-transform: lowercase;
+	text-shadow: 0 1px 0 white;
+	letter-spacing: 0.5ex;
+	font-weight: bold;
+	font-size: 100%;
+
+	background: white;
+	text-shadow: 0 0 5px black;
+
+	margin: 0;
+	padding: 14px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+#content {
+	background: white;
+	border-radius: 21px;
+	padding: 14px 40px;
+}
+
+#help {
+	cursor: help;
+}
+
+#dim {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	display: none;
+	cursor: wait;
+}
+
+#chessboard {
+	width: 700px;
+	height: 700px;
+	float: left;
+	padding: 0;
+}
+
+#moves {
+	border: 1px solid silver;
+	border-radius: 14px;
+	width: 138px;
+	 
+	padding: 5px;
+	padding-left: 15px;
+	float: right;
+	overflow: auto;
+	height: 688px;
+}
+
+#moves button {
+	width: 100%;
+}
+
+#clear {
+	clear: both;
+	width: 0;
+	height: 0;
+}
+
+
+#chessboard table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: none;
+	cursor: default;
+
+	 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#chessboard table tr th, #chessboard table tr td {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#chessboard table tr th {
+	background: silver;
+	font-size: small;
+	font-weight: normal;
+}
+
+#chessboard table tr th.file {
+	width: 80px;
+	height: 30px;
+}
+
+#chessboard table tr th.rank {
+	width: 30px;
+	height: 80px;
+}
+
+#chessboard table tr:first-child th:first-child {
+	border-top-left-radius: 14px;
+}
+
+#chessboard table tr:first-child th:last-child {
+	border-top-right-radius: 14px;
+}
+
+#chessboard table tr:last-child th:first-child {
+	border-bottom-left-radius: 14px;
+}
+
+#chessboard table tr:last-child th:last-child {
+	border-bottom-right-radius: 14px;
+}
+
+#chessboard table tr td {
+	width: 80px;
+	height: 80px;
+}
+
+#chessboard table tr td.light {
+	text-shadow: 0 0 10px black;
+	background: #E0E0E0;
+	background: -moz-linear-gradient(-45deg, #ffffff 0%, #c0c0c0 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #c0c0c0));
+	background: -webkit-linear-gradient(-45deg, #ffffff 0%, #c0c0c0 100%);
+	background: -o-linear-gradient(-45deg, #ffffff 0%, #c0c0c0 100%);
+	background: -ms-linear-gradient(-45deg, #ffffff 0%, #c0c0c0 100%);
+	background: linear-gradient(135deg, white, silver);
+
+}
+
+#chessboard table tr td.dark {
+	text-shadow: 0 0 10px white;
+	background: #404040;
+	background: -moz-linear-gradient(-45deg, #808080 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #808080), color-stop(100%, #000000));
+	background: -webkit-linear-gradient(-45deg, #808080 0%, #000000 100%);
+	background: -o-linear-gradient(-45deg, #808080 0%, #000000 100%);
+	background: -ms-linear-gradient(-45deg, #808080 0%, #000000 100%);
+	background: linear-gradient(135deg, gray, black);
+}
+
+#chessboard table tr td div {
+	font-size: 50px;
+}
+
+#chessboard table tr td.white {
+	color: white;
+}
+
+#chessboard table tr td.black {
+	color: black;
+}
+
+#chessboard table tr td.from {
+	font-weight: bold;
+}
+
+#chessboard table tr td.to {
+	box-shadow: inset 0 0 10px 1px green;
+}
+
+#chessboard table tr td.to.capture {
+	box-shadow: inset 0 0 10px 1px red;
+}
+
+#chessboard table tr td.to.en-passant:after {
+	color: red;
+	content: "e.p.";
+}
+
+#chessboard table tr td.to.king-castle:after {
+	color: magenta;
+	content: "0-0";
+}
+
+#chessboard table tr td.to.queen-castle:after {
+	color: magenta;
+	content: "0-0-0";
+}
+
+#chessboard table tr td.to.positional:after, #chessboard table tr td.to.double-push:after {
+	color: gray;
+	content: "\2022";
+}
+
+#chessboard table tr td.turn {
+	cursor: move;
+}
+
+#chessboard table tr td div.turn:not(.can-move) {
+	cursor: not-allowed;
+}
+
+#chessboard table tr td.last-move {
+	box-shadow: inset 0 0 10px 1px yellow;
+}
+
+#moves a {
+	color: gray;
+	font-size: 8pt;
+	text-decoration: none;
+}
+
+#moves a.cannot {
+	color: silver;
+	pointer-events: none;
+	cursor: default;
+}
+
+
+.form-head {
+    color: #191919;
+    font-weight: normal;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.error-message {
+    padding: 7px 10px;
+    background: #fff1f2;
+    border: #ffd5da 1px solid;
+    color: #d6001c;
+    border-radius: 4px;
+    margin: 30px 10px 10px 10px;
+}
+
+.demo-table {
+	border: 5px solid yellowgreen;
+    padding: 35px;
+    background: #ffffff;
+    border-spacing: initial;
+    margin: 15px auto;
+    word-break: break-word;
+    table-layout: auto;
+    line-height: 1.8em;
+    color: #333;
+    border-radius: 4px;
+    padding: 30px;
+    width: 380px;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+
+.demo-table .label {
+    color: #888888;
+}
+
+.demo-table .field-column {
+    padding: 15px 10px;
+}
+
+.demo-input-box {
+    padding: 13px;
+    border: #CCC 1px solid;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btnLogin {
+    padding: 13px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    border: #5791da 1px solid;
+    font-size: 1.1em;
+}
+
+.response-text {
+    max-width: 380px;
+    font-size: 1.5em;
+    text-align: center;
+    background: #fff3de;
+    padding: 42px;
+    border-radius: 3px;
+    border: #f5e9d4 1px solid;
+    font-family: arial;
+    line-height: 34px;
+    margin: 15px auto;
+}
+
+.terms {
+    margin-bottom: 5px;
+}
+
+.dashboard {
+    background: #d2edd5;
+    text-align: center;
+    margin: 15px auto;
+    line-height: 1.8em;
+    color: #333;
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 400px;
+    border: #c8e0cb 1px solid;
+}
+.error-info {
+    color: #FF0000;
+    margin-left: 10px;
+}
+a.logout-button {
+    color: #09f;
+}
